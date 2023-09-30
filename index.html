@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VueJs test</title>
-    <link href="style.css" , rel="stylesheet" />
-    <script src="vue.js"></script>
-    <script src="script.js"></script>
+    <title>Test Vue</title>
 </head>
 
 <body>
     <div id="root-element">
-        <h1>{{ name }}, {{ age }}</h1>
+        {{ name }} {{ age }}
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
+
+    <script>
+
+        var myModel = {
+            name: "Mai Bình",
+            age: 24
+        };
+
+        new Vue({
+            el: '#root-element',
+            data: myModel
+        });
+
+    </script>
+
 </body>
+
+</html>
 
 </html>
